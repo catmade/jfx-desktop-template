@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" stylesheets="@../css/primary.css"
+      xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="cn.catmade.controller.PrimaryController">
+   <Label fx:id="lbFilePath">
+      <font>
+         <Font size="25.0"/>
+      </font>
+   </Label>
+</VBox>
