@@ -53,7 +53,7 @@ public class StartController extends BaseController {
                         new FileChooser.ExtensionFilter("any files (*.*)", "*.*")
                 );
 
-                File file = fileChooser.showOpenDialog(astage.get());
+                File file = fileChooser.showOpenDialog(stage);
                 if (file == null) {
                     return;
                 }

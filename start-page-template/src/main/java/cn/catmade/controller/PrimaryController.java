@@ -16,7 +16,6 @@ public class PrimaryController extends BaseController {
 
     public static final String FXML_NAME = "primary";
 
-    private File file;
     public static final String FILE_INTENT_NAME = "file";
 
     @FXML
@@ -31,7 +30,7 @@ public class PrimaryController extends BaseController {
 
     @Override
     protected void onDataInited() {
-        file = (File) data.get(FILE_INTENT_NAME);
+        File file = (File) data.get(FILE_INTENT_NAME);
         lbFilePath.setText(file.getAbsolutePath());
     }
 }

@@ -7,7 +7,6 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.ResourceBundle;
-import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * 基本控制器，包含 stage 对象，可以进行窗体相关的操作
@@ -17,8 +16,6 @@ import java.util.concurrent.atomic.AtomicReference;
  * @date 2020/11/17 22:55
  */
 public class BaseController implements Initializable {
-
-    protected static AtomicReference<Stage> astage = new AtomicReference<>();
 
     protected Stage stage;
 
@@ -35,7 +32,6 @@ public class BaseController implements Initializable {
      */
     public final void setStage(Stage stage) {
         this.stage = stage;
-        BaseController.astage.set(stage);
         onStageInited();
     }
 
